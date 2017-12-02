@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>河北师大官网首页</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding:0;
+			background-color: #fff;
+		}
+		.top{
+			width: 1002px;
+			height: 105px;
+			margin: 0 auto;
+		}
+		.line{
+			width: 1002px;
+			height: 6px;
+			background-image: url(images/line.png);
+		}
+		.logo{
+			width: 354px;
+			height: 97px;
+			float: left;
+			background-image: url(images/logo.png);
+		}
+		.search{
+			width: 220px;
+			height: 50px;
+			float: right;
+			margin: 20px 20px;
+		}
+		.img{
+			float: right;
+		}
+		.nav{
+			width: 1002px;
+			height: 50px;
+			margin: 0 auto;
+			z-index: 5;
+		}
+		.nav > li{
+			float: left;
+			margin: 9px;
+		}
+		.nav li{
+			width: 90px;
+			height: 30px;
+			list-style: none;
+			display: block;
+		}
+		.nav a:link,.nav a:visited{
+			text-decoration: none;
+			display: block;
+			text-align: center;
+			line-height: 30px;
+			color: black;
+			overflow: none;
+		}
+		.nav a:hover{
+			color: #fff;
+			background: #0E6EB8;
+		}
+		.nav li ul li a:link ,.nav li ul li a:visited{
+			width: 120px;
+			height: 30px;
+			line-height: 30px;
+		}
+		.nav li ul a:link,.nav li ul a:visited{
+			background: #0E6EB8;
+			color: #fff;
+			font-size: 15px;
+		}
+		.nav li ul a:hover{
+			background: #00ADED;
+		}
+		.nav li ul{
+			display: none;
+		}
+		.nav .show ul{
+			display: block;
+		}
+		.imgs{
+			width: 1200px;
+			height: 397px;
+			overflow: hidden;
+			position: absolute;
+			top: 190px;
+			left: 70px;
+			z-index: -2;
+		}
+		.imgs a{
+			display: none;
+		}
+		.foot{
+			width: 1000px;
+			height: 69px;
+			background-image: url(images/foot.png);
+			position: absolute;
+			bottom: 0px;
+			left: 100px;
+		}
+		.foot > span{
+			width: 40px;
+			height: 69px;
+			line-height: 69px;
+			float: left;
+			background-color: red;
+			color: #fff;
+			font-size: 30px;
+			text-align: center;
+			cursor: pointer;
+		}
+		#next{
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div class="top">
+		<div class="line"></div>
+		<div class="logo"></div>
+		<div class="search">
+			<form>
+				<input type="text" name="tex" value="搜索"/>
+				<div class="img"><a href="#"><img src="images/sear.png"></a></div>
+			</form>
+		</div>
+	</div>
+		<ul class="nav">
+			<li class="e"><a href="#">首页</a></li>
+			<li class="e"><a href="#">学校概况<</a>
+				<ul>
+					<li><a href="#">学校简介</a></li>
+					<li><a href="#">学科专业</a></li>
+					<li><a href="#">治理架构</a></li>
+					<li><a href="#">历史沿革</a></li>
+					<li><a href="#">学校标志</a></li>
+					<li><a href="#">校园风光</a></li>
+					<li><a href="#">校园地图</a></li>
+				</ul>
+			</li>
+			<li class="e"><a href="#">机构设置<</a>
+				<ul>
+					<li><a href="#">教学单位</a></li>
+					<li><a href="#">管理服务</a></li>
+					<li><a href="#">附属单位</a></li>
+					<li><a href="#">汇华学院</a></li>
+				</ul>
+			</li>
+			<li class="e"><a href="#">人才培养<</a>
+				<ul>
+					<li><a href="#">师资队伍</a></li>
+					<li><a href="#">本科生教育</a></li>
+					<li><a href="#">研究生教育</a></li>
+					<li><a href="#">继续教育</a></li>
+					<li><a href="#">留学生教育</a></li>
+					<li><a href="#">中外合作办学</a></li>
+				</ul>
+			</li>
+			<li class="e"><a href="#">科学研究<</a>
+				<ul>
+					<li><a href="#">科学研究平台</a></li>
+					<li><a href="#">自然科学与技术</a></li>
+					<li><a href="#">人文与社会科学</a></li>
+					<li><a href="#">合作交流</a></li>
+					<li><a href="#">社会期刊</a></li>
+				</ul>
+			</li>
+			<li class="e"><a href="#">招生就业<</a>
+				<ul>
+					<li><a href="#">本科生招生</a></li>
+					<li><a href="#">研究生招生</a></li>
+					<li><a href="#">继续教育招生</a></li>
+					<li><a href="#">留学生招生</a></li>
+					<li><a href="#">就业服务</a></li>
+				</ul>
+			</li>
+			<li><a href="#">人才招聘</a></li>
+			<li class="e"><a href="#">公共服务<</a>
+				<ul>
+					<li><a href="#">本科生服务</a></li>
+					<li><a href="#">研究生服务</a></li>
+					<li><a href="#">行政事务服务</a></li>
+					<li><a href="#">图书馆情报服务</a></li>
+					<li><a href="#">预决算公开</a></li>
+					<li><a href="#">生活服务</a></li>
+					<li><a href="#">网络服务</a></li>
+				</ul>
+			</li>
+			<li><a href="#">校友会</a></li>
+		</ul>
+	<div class="imgs">
+		<a href="#" style="display: block;"><img src="images/banner_00.gif" alt="1"></a>
+		<a href="#"><img src="images/banner_01.jpg" alt="2"></a>
+		<a href="#"><img src="images/banner_02.jpg" alt="3"></a>
+		<a href="#"><img src="images/banner_03.jpg" alt="4"></a>
+		<a href="#"><img src="images/banner_04.jpg" alt="5"></a>
+		<a href="#"><img src="images/banner_05.jpg" alt="6"></a>
+		<a href="#"><img src="images/banner_06.jpg" alt="7"></a>
+		<a href="#"><img src="images/banner_07.jpg" alt="8"></a>
+		<a href="#"><img src="images/banner_08.jpg" alt="9"></a>
+		<div class="foot">
+			<span id="prior"><</span>
+			<span id="next">></span>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	window.onload=function(){
+		var linodes=document.getElementsByClassName('e');
+		for(var i=0;i<linodes.length;i++)
+		{
+			linodes[i].onmouseover=function(){
+				this.className="show";
+			}
+			linodes[i].onmouseout=function(){
+				this.className="";
+			}
+		}
+	}
+	var imgs=document.getElementsByClassName('imgs')[0];
+	var img=imgs.getElementsByTagName('a');
+	var i=0;
+	function T(){
+		img[i%8].style.display='none';
+		i++;
+		img[i%8].style.display='block';
+	}	
+	var travel=setInterval(T,2000);
+	for(var j=0;j<img.length;j++)
+	{
+		img[j].onmouseover=function(){
+			clearInterval(travel);
+		}
+		img[j].onmouseout=function(){
+			travel=setInterval(T,2000);
+		}
+	}
+	var prior=document.getElementById('prior');
+	var next=document.getElementById('next');
+	prior.onclick=function(){
+		img[i%8].style.display='none';
+		i--;
+		if(i<0)
+		{
+			i=7;
+		}
+		img[i%8].style.display='block';
+	}
+	next.onclick=function(){
+		T();
+	}
+</script>
+</html>
