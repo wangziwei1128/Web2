@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>商品评分</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin: 0 auto;
+		}
+		.all{
+			width: 482px;
+			height: 281px;
+			border:1px solid black;
+		}
+		#title{
+			width: 450px;
+			height: 30px;
+			line-height: 30px;
+			font-size: 15px;
+		}
+		#state{
+			width: 450px;
+			height: 40px;
+			line-height: 40px;
+		}
+		#com{
+			margin-left: 15px;
+		}
+		#but{
+			float: right;
+			display: block;
+			margin-right: 20px;
+			margin-top: 5px;
+		}
+	</style>
+</head>
+<body>
+	<div class="all">
+		<div id="title">宝贝与描述相符（打分匿名）</div>
+		<div id="state">
+			<img src="images/star0.png">
+			<img src="images/star0.png">
+			<img src="images/star0.png">
+			<img src="images/star0.png">
+			<img src="images/star0.png">
+		</div>
+		<div id="com">
+			<form>
+				<textarea name="com" rows="11" cols="61" id="text">
+				</textarea>
+			</form>
+		</div>
+		<div id="but">
+			<button>公开评论<img src="images/sanjiao.png"></button>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	var arr=['差评','二星','三星','四星','好评'];
+	var img=document.getElementsByTagName('img');
+	var con=false;
+	for(var i=0;i<img.length-1;i++)
+	{
+		img[i].a=i;
+		var T=function starPic(){
+			for(var j=0;j<img.length-1;j++)
+			{
+				img[j].src="images/star0.png";
+			}
+			if(this.a<2)
+			{
+				for(var j=0;j<=this.a;j++)
+				{
+					img[j].src="images/star1.png";
+				}
+			}
+			else
+			{
+				for(var j=0;j<=this.a;j++)
+				{
+					img[j].src="images/star2.png";
+				}
+			}
+			document.getElementById('text').value=arr[this.a];
+		}
+		con=false;
+	}
+	var H=function hide(){
+		if(con==false)
+		{
+			for(var j=0;j<img.length-1;j++)
+			{
+				img[j].src="images/star0.png";
+			}
+			document.getElementById('text').value="";
+		}
+	}
+	var click=function qd(){
+		T;
+		document.getElementById('text').value=arr[i];
+		con=true;
+	}
+	for(var i=0;i<img.length-1;i++)
+	{
+		img[i].onmouseover=T;
+		img[i].onmouseout=H;
+	}
+</script>
+</html>
